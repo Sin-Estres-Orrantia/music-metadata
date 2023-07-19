@@ -6,7 +6,7 @@ const audioUrl = 'https://github.com/Borewit/music-metadata/raw/master/test/samp
 
 function httpGet (url) {
   return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
+    https.get(url, res => {
       switch (res.statusCode) {
         case 200:
           resolve(res);
